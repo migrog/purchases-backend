@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\purchase.domain.entities\purchase.domain.entities.csproj" />
+    <ProjectReference Include="..\purchase.infra.data\purchase.infra.data.csproj" />
+  </ItemGroup>
+
+</Project>
