@@ -3,35 +3,36 @@ Gestión de Compras - API Rest Services
 
 ## Pasos Iniciales
 
-###Clonar el repositorio
+### Clonar el repositorio
 
 ```bash
   git clone https://github.com/migrog/purchases-backend.git
 ```
 
-###Crear la base de datos(SQL Server):
+### Crear la base de datos(SQL Server):
 
 Ubica los scripts en carpeta "database" y Ejecutalos en el siguiente orden:
   1. schema.sql
   2. data-default.sql
 
-###Configurar la conexión de la base datos de los servicios:
+### Configurar la conexión de la base datos de los servicios:
 
 Modificar el archivo: appsettings.json de cada servicio:
-*rutas:
+
+rutas:
 - servicio "user" --> user\user.api\appsettings.json
 - servicio "product" --> product\product.api\appsettings.json
 - servicio "purchase" --> purchase\purchase.api\appsettings.json
 
-####Sección a modificar:
+#### Sección a modificar:
 ```bash
   "ConnectionStrings": {
         "Conexion": "Server=localhost\\SQL2019; Database=purchases; User Id=sa; Password=password"
     },
 ```
 Nota: 
--Se recomienda cambiar el Server, User Id y Password según la configuración de tu servidor de base datos.
--Se recomienda mantener el nombre de la Database.
+- Se recomienda cambiar el Server, User Id y Password según la configuración de tu servidor de base datos.
+- Se recomienda mantener el nombre de la Database.
 
 ## Ejecutar Localmente(IIS Express):
 
