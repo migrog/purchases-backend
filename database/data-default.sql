@@ -12,6 +12,6 @@ GO
 
 INSERT INTO enumerate
 VALUES
-('PEN','SOLES','10'),
-('USD','DOLAR','10')
+('1','PEN','10'),
+('2','USD','10')
 GO
